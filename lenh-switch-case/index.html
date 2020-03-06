@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị ngày trong tháng</title>
+
+</head>
+<body>
+    <label><input type="text" id="input-month"></label>
+    <button type="button" id="result" onclick="showdays()">Tính số ngày</button>
+    <br>
+    <span id="show-result"></span>
+
+<script>
+    function showdays() {
+        let month = parseInt(document.getElementById('input-month').value);
+        if (month >= 1 && month <= 12) {
+            switch (month) {
+                case 2:
+                    document.getElementById('show-result').innerHTML = "Tháng " + month + " có 28 hoặc 29 ngày";
+                    break;
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById('show-result').innerHTML = "Tháng " + month +  " có 31 ngày";
+                    break;
+                default:
+                    document.getElementById('show-result').innerHTML = "Tháng " + month +  " có 30 ngày";
+            }
+        } else {
+            document.getElementById('show-result').innerHTML = "Nhập sai, mời nhập lại tháng";
+        }
+    }
+</script>
+</body>
+</html>

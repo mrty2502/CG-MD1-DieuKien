@@ -1,0 +1,18 @@
+.main-app {
+    border: red 5px solid;
+    width: 750px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 750px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+ Số tiền vay ban đầu :
+ <label><input type="text"  name="cash"></label> <br>
+ Lãi suất:
+ <label><input type="text"  name="cash"></label> <br>
+ Số tháng cho vay:
+ <label><input type="text"  name="cash"></label> <br>
+ Lãi suất cuối k:
+ <label><input type="text"  name="cash"></label>
+
+
+
+ <script>
+    let cash = parseInt(prompt('moi nhap so tien can vay'));
+    let month = parseInt(prompt('moi nhap so thang can vay'));
+    let bonus = parseInt(prompt('moi nhap ly suat hang thang'));
+    let total = cash * Math.pow((1+bonus), month);
+    alert('So suat cuoi ky cua ban se bang ' + total);
+
+
+</script>
+
+</body>
+</html>
